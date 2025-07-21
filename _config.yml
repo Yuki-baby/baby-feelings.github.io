@@ -8,3 +8,5 @@ url: "https://baby-feelings.github.io" # 公開先のURL（例: https://Yuki-bab
 # この部分をファイルの一番下に追加
 plugins:
   - jekyll-sitemap
+
+google_analytics: G-6BTCQ4XQZ3
