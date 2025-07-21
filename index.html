@@ -103,44 +103,47 @@ description: もう一人で悩まないで。AIが赤ちゃんの泣き声を�
 <section id="how-to-use" class="py-20 bg-white fade-in-section">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold">４ステップのかんたん利用方法</h2>
+            <h2 class="text-3xl md:text-4xl font-bold">4ステップのかんたん利用方法</h2>
         </div>
-        <!-- 4列グリッドに変更 -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 text-center">
             
-            <!-- ステップ 1 -->
             <div>
-                <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-6 h-64 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-teal-500">
-                        <path fill-rule="evenodd" d="M15.75 2.25H8.25a3 3 0 0 0-3 3v13.5a3 3 0 0 0 3 3h7.5a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3ZM12 8.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75ZM12 15a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75Z" clip-rule="evenodd" />
-                    </svg>
+                <div class="relative">
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md h-64 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-teal-500">
+                            <path fill-rule="evenodd" d="M15.75 2.25H8.25a3 3 0 0 0-3 3v13.5a3 3 0 0 0 3 3h7.5a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3ZM12 8.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75ZM12 15a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-teal-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold border-2 border-white shadow-md">1</div>
                 </div>
-                <div class="bg-teal-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto -mt-12 border-4 border-white">1</div>
-                <h3 class="text-2xl font-bold mt-4 mb-2">アクセス</h3>
+                <h3 class="text-2xl font-bold mt-6 mb-2">アクセス</h3>
                 <p class="text-gray-600">公式サイトにアクセス。<br>アプリのインストールは不要です。</p>
             </div>
 
-            <!-- ステップ 2 -->
             <div>
-                <img src="{{ '/assets/images/step2-record.png' | relative_url }}" alt="録音開始画面" class="w-auto h-64 mx-auto rounded-lg shadow-md mb-6 object-contain">
-                <div class="bg-teal-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto -mt-12 border-4 border-white">2</div>
-                <h3 class="text-2xl font-bold mt-4 mb-2">録音</h3>
+                <div class="relative">
+                    <img src="{{ '/assets/images/step2-record.png' | relative_url }}" alt="録音開始画面" class="w-full h-64 rounded-lg shadow-md object-contain bg-gray-100">
+                    <div class="absolute top-4 left-4 bg-teal-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold border-2 border-white shadow-md">2</div>
+                </div>
+                <h3 class="text-2xl font-bold mt-6 mb-2">録音</h3>
                 <p class="text-gray-600">マイクボタンを押して、赤ちゃんの泣き声を録音します。</p>
             </div>
 
-            <!-- ステップ 3 -->
             <div>
-                <img src="{{ '/assets/images/step3-result.png' | relative_url }}" alt="分析結果画面" class="w-auto h-64 mx-auto rounded-lg shadow-md mb-6 object-contain">
-                <div class="bg-teal-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto -mt-12 border-4 border-white">3</div>
-                <h3 class="text-2xl font-bold mt-4 mb-2">結果を確認</h3>
+                <div class="relative">
+                    <img src="{{ '/assets/images/step3-result.png' | relative_url }}" alt="分析結果画面" class="w-full h-64 rounded-lg shadow-md object-contain bg-gray-100">
+                    <div class="absolute top-4 left-4 bg-teal-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold border-2 border-white shadow-md">3</div>
+                </div>
+                <h3 class="text-2xl font-bold mt-6 mb-2">結果を確認</h3>
                 <p class="text-gray-600">AIが即座に分析を開始。赤ちゃんの気持ちの可能性を表示します。</p>
             </div>
             
-            <!-- ステップ 4 (新規追加) -->
             <div>
-                <img src="{{ '/assets/images/step4-careplan.png' | relative_url }}" alt="AIケアプラン画面" class="w-auto h-64 mx-auto rounded-lg shadow-md mb-6 object-contain">
-                <div class="bg-teal-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto -mt-12 border-4 border-white">4</div>
-                <h3 class="text-2xl font-bold mt-4 mb-2">ケアプラン実行</h3>
+                <div class="relative">
+                    <img src="{{ '/assets/images/step4-careplan.png' | relative_url }}" alt="AIケアプラン画面" class="w-full h-64 rounded-lg shadow-md object-contain bg-gray-100">
+                    <div class="absolute top-4 left-4 bg-teal-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold border-2 border-white shadow-md">4</div>
+                </div>
+                <h3 class="text-2xl font-bold mt-6 mb-2">ケアプラン実行</h3>
                 <p class="text-gray-600">AIからの具体的なアドバイスを参考に、赤ちゃんのケアをします。</p>
             </div>
 
