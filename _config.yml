@@ -2,3 +2,5 @@
 
 title: Baby Feelings
 description: AIで赤ちゃんの気持ち、もっとわかる。
+baseurl: "" # GitHub Pagesでルートにデプロイする場合は空のまま
+url: "" # 公開先のURL（例: https://Yuki-baby.github.io/baby-feelings.github.io）

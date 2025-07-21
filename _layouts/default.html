@@ -1,55 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% include head.html %}
 </head>
 <body class="bg-stone-50 text-gray-800">
-    <header id="header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="{{ '/' | relative_url }}" class="text-2xl font-bold text-teal-600">👶 Baby Feelings</a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#features" class="text-gray-600 hover:text-teal-600 transition">特徴</a>
-                <a href="#how-to-use" class="text-gray-600 hover:text-teal-600 transition">使い方</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition">ユーザーの声</a>
-                <a href="https://new-baby-feelings.vercel.app/" target="_blank" class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition shadow">今すぐ試す</a>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
-            <a href="#features" class="block py-2 text-gray-600 hover:text-teal-600">特徴</a>
-            <a href="#how-to-use" class="block py-2 text-gray-600 hover:text-teal-600">使い方</a>
-            <a href="#testimonials" class="block py-2 text-gray-600 hover:text-teal-600">ユーザーの声</a>
-            <a href="https://new-baby-feelings.vercel.app/" target="_blank" class="block mt-2 bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition shadow">今すぐ試す</a>
-        </div>
-    </header>
+    
+    {% include header.html %}
 
     <main>
         {{ content }}
     </main>
 
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-8 text-center">
-            <p class="text-2xl font-bold text-white mb-4">👶 Baby Feelings</p>
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-teal-400">プライバシーポリシー</a>
-                <a href="#" class="hover:text-teal-400">利用規約</a>
-                <a href="#" class="hover:text-teal-400">お問い合わせ</a>
-            </div>
-            <p>&copy; 2025 Baby Feelings. All Rights Reserved.</p>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
