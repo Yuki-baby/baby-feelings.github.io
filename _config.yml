@@ -4,3 +4,7 @@ title: Baby Feelings
 description: AIで赤ちゃんの気持ち、もっとわかる。
 baseurl: "" # GitHub Pagesでルートにデプロイする場合は空のまま
 url: "https://baby-feelings.github.io" # 公開先のURL（例: https://Yuki-baby.github.io/baby-feelings.github.io）
+
+# この部分をファイルの一番下に追加
+plugins:
+  - jekyll-sitemap
