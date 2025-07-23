@@ -12,8 +12,8 @@
     <!-- スクリーン部分 -->
     <div class="rounded-[2rem] overflow-hidden w-full h-full bg-white">
         {% if include.image_src %}
-            <!-- 画像が指定された場合 -->
-            <img src="{{ include.image_src | relative_url }}" class="w-full h-full object-cover" alt="{{ include.alt_text }}">
+            <!-- ★★★ 修正点: object-cover を object-contain に変更 ★★★ -->
+            <img src="{{ include.image_src | relative_url }}" class="w-full h-full object-contain" alt="{{ include.alt_text }}">
         {% else %}
             <!-- 画像以外のコンテンツが指定された場合 -->
             <div class="w-full h-full flex items-center justify-center bg-gray-100 p-4">
