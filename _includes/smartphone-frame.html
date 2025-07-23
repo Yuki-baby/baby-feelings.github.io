@@ -13,7 +13,7 @@
     <div class="rounded-[2rem] overflow-hidden w-full h-full bg-white">
         {% if include.image_src %}
             <!-- ★★★ 修正点: object-contain を object-cover に戻す ★★★ -->
-            <img src="{{ include.image_src | relative_url }}" class="w-full h-full object-cover" alt="{{ include.alt_text }}">
+            <img src="{{ include.image_src | relative_url }}" class="w-full h-full object-contain" alt="{{ include.alt_text }}">
         {% else %}
             <!-- 画像以外のコンテンツが指定された場合 -->
             <div class="w-full h-full flex items-center justify-center bg-gray-100 p-4">
